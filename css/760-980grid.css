@@ -1,0 +1,374 @@
+/* ==========================================================================
+
+  Author: Slawomir Kroczak
+  Version: 1.0 - Last Updated: 23th May, 2013
+
+/*----------------------------------------------------
+                 CSS File
+------------------------------------------------------*/
+
+/* --
+
+Styles Index
+=======
+1.0 Micro Clearfix, Resets and Common Classes
+2.0 Document Setup (container, links etc)
+	2.1 container
+	2.2 links
+	2.3 Headings - h1, h2, h3, h4, h5, h6 & other (if any)
+	2.4 Paragraphs, block, etc
+	2.5 Lists
+	2.6 Buttons
+	2.7 iFrame
+3.0 Grid Layout (Responsive)
+
+
+-- */
+
+/*
+========================================================================== */
+/* ==========================================================================
+/* --  1.0 Micro Clearfix, Resets and Common Classes
+   ========================================================================== */
+
+/* Micro Clearfix */
+    .clear:before,
+    .clear:after {
+      content: "";
+      display: table;
+    }
+    .clear:after {
+      clear: both;
+    }
+    .clear {
+      zoom: 1;
+    }
+    .section:before,
+    .section:after {
+      content: "";
+      display: table;
+    }
+    .section:after {
+      clear: both;
+    }
+    .section {
+      zoom: 1;
+    }
+    .checkbox:before,
+    .checkbox:after {
+      content: "";
+      display: table;
+    }
+    .checkbox:after {
+      clear: both;
+    }
+    .checkbox {
+      zoom: 1;
+    }
+/* General Resets */
+/* Start font size at 100% */
+    #container {
+      font-size: 100%;
+    }
+/* Make all form fonts consistent */
+    #container button
+    {
+      font-family: sans-serif;
+    }
+/* Remove default borders */
+    #container a img {
+      border: 0;
+    }
+
+/* Common Classes */
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    .block {
+      display: block;
+    }
+    .inline-block {
+      display: inline-block;
+      *zoom: 1;
+      *display: inline;
+    }
+    .inline {
+      display: inline;
+    }
+#container .container-inner  .rel{
+        position: relative;
+    }
+    .visuallyhidden {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      left: -9999em;
+    }
+    .visuallyvisible {
+      clip: auto;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      left: 0;
+    }
+    .strong {
+      font-weight: bold;
+    }
+    .alert {
+      background-color: #ffffcc;
+      display: block;
+      padding: 4px 8px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+    }
+    .nolist {
+      list-style: none;
+    }
+    .nopadding {
+      padding: 0;
+    }
+    .nomargin {
+      margin: 0;
+    }
+    .none{
+      display: none;
+    }
+    .corner{
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -o-border-radius: 5px;
+        -ms-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .noselect {-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+    .noLinkDecoration{text-decoration: none;}
+    .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+    .ir br { display: none; }
+/* ==========================================================================
+/* 2.0 - Document Setup (container, links etc)
+   ========================================================================== */
+/* 2.1 #container */
+    #container {
+      font-family: arial, helvetica, clean, sans-serif;
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 22px;
+      line-height: 1.375rem;
+      background-color: #efefef;
+      color: #222222;
+      margin: 0;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+/* 2.2 Links */
+    #container a {
+      color: #054a7c;
+      text-decoration: underline;
+    }
+    #container a:visited {
+      color: #054a7c;
+    }
+    #container a:hover {
+      text-decoration: none;
+    }
+    #container a:active {
+      color: #333333;
+    }
+/* 2.3 Headings - h1, h2, h3, h4, h5, h6 & other (if any)
+   ========================================================================== */
+    #container h1,
+    #container h2,
+    #container h3,
+    #container h4,
+    #container h5,
+    #container h6 {
+      margin: 0;
+      line-height: normal;
+    }
+    #container h1,
+    #container .h1 {
+      font-size: 40px;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    #container h2,
+    #container .h2 {
+      font-size: 32px;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    #container h3,
+    #container .h3 {
+      font-size: 26px;
+      font-size: 1.625rem;
+      margin-bottom: 6px;
+    }
+    #container h4,
+    #container .h4 {
+      font-size: 20px;
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+/* 2.4 Paragraphs, block quotes, code, pre, etc
+   ========================================================================== */
+    #container small {
+      font-size: 12px;
+      font-size: 0.75rem;
+    }
+    /* Horizontal Rule */
+    #container hr {
+      border: 0;
+      background: none;
+      outline: 0;
+      height: 1px;
+      background-color: #dddddd;
+      margin: 1em 0;
+    }
+
+/* 2.5 Lists
+   ========================================================================== */
+    #container ul,
+    #container ul ul {
+      list-style: disc;
+      margin: 4px 0 4px 25px;
+      padding: 0;
+    }
+    #container ol,
+    #container ol ol {
+      list-style: decimal;
+      margin: 4px 0 4px 25px;
+      padding: 0;
+    }
+
+    #container ul.hot-deal-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+/* ==========================================================================
+/* 3.0 - Grid Layout (Responsive)
+   ========================================================================== */
+/* Sections & Content Blocks */
+    #container .section {
+      position: relative;
+    }
+    #container .row {
+      margin-bottom: 1em;
+    }
+    #container {
+      max-width: 880px;
+      min-width: 660px;
+      margin: 0 auto;
+      padding: 20px 50px;
+    }
+    #container.container-full {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    /* Fluid Grid */
+    #container .col {
+      margin-left: 1%;
+      float: left;
+    }
+    #container .col:first-child {
+      margin-left: 0;
+    }
+/* Columns */
+    #container .one {
+      width: 7.833%;
+    }
+    #container .two {
+      width: 16.167%;
+    }
+    #container .three {
+      width: 24.2%;
+    }
+    #container .four {
+      width: 32.65%;
+    }
+    #container .five {
+      width: 41.167%;
+    }
+    #container .six {
+      width: 49.5%;
+    }
+    #container .seven {
+      width: 57.833%;
+    }
+    #container .eight {
+      width: 66.167%;
+    }
+    #container .nine {
+      width: 74.5%;
+    }
+    #container .ten {
+      width: 82.833%;
+    }
+    #container .eleven {
+      width: 91.167%;
+    }
+    #container .twelve {
+      width: 100%;
+        margin-left: 0;
+    }
+    #container .half {
+      width: 49.5%;
+    }
+    #container .one-third {
+      width: 32.6651341%;
+    }
+    #container .one-fourth {
+        width: 24.232575%;
+    }
+    #container .one-fifth {
+        width: 19.19064%;
+    }
+    #container .one-sixth {
+        width: 15.82601%;
+    }
+
+    #container  .one-twelve{
+        width: 7.409%;
+    }
+    #container .row .col {
+        color: #111;
+        text-align: center;
+        line-height: 10px;
+        min-height: 30px;
+    }
+
+
+#container .row .last {
+    margin-right: 0;
+}
+#container .row .first {
+    margin-left: 0;
+}
+
+
+    /* DEEBUG */
+
+body.debug #container .row .col {
+    background: #ccc;
+    color: #111;
+    text-align: center;
+    line-height: 30px;
+/*    min-height: 30px;*/
+}
+
