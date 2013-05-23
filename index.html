@@ -6,8 +6,11 @@
     <meta charset="UTF-8" />
     <title>CSS3 tabs</title>
     <link rel="stylesheet" type="text/css" media="all" href="css/760-980grid.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="css/tabs.css" />
-
+    <!--[if lt IE 10 ]><link rel="stylesheet" type="text/css" media="all" href="css/IE-tabs.css" /> <![endif]-->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <link rel="stylesheet" type="text/css" media="all" href="css/modern-tabs.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="css/animation.css" />
+    <!--<![endif]-->
 </head>
 <body style="background-color: #e5eaff;">
 
@@ -28,7 +31,7 @@
         <div class="col twelve">
 
             <div id="tab-container">
-                <div id="box">
+                <div id="box-mask" >
                     <div id="box0" class="box">
 
                         <img src="img/kv0-intro.jpg" width="100%" alt="kv-0-intro">
@@ -135,21 +138,14 @@
                         </div>
 
                     </div>
-
                 </div>
-                <!-- <ul id="boxLinks" class="group">
-                     <li><a href="#box1">Tab 1</a></li>
-                     <li><a href="#box2">Tab 2</a></li>
-                     <li><a href="#box3">Tab 3</a></li>
-                     <li><a href="#box4">Tab 4</a></li>
-                 </ul>-->
-
-
-
+                <div class="progress-bar"></div>
             </div>
 
         </div>
     </div>
+
+    <div class="clear"></div>
     <!--[if IE]><b>.</b><![endif]-->
 
 </div><!-- /container-->

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 36px Georgia, Serif;
+    margin: 20px 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+.tabs {
+    list-style: none;
+}
+
+.tabs li {
+    display: inline;
+}
+
+.tabs li a {
+    color: black;
+    float: left;
+    display: block;
+    padding: 4px 10px;
+    margin-left: -1px;
+    position: relative;
+    left: 1px;
+    background: white;
+    text-decoration: none;
+}
+
+.tabs li a:hover {
+    background: #ccc;
+}
+
+
+/* PROGRESS BAR */
+.progress-bar {
+    position:relative;
+    top:-5px;
+    width:100%;
+    height:5px;
+    background:#000;
+    -webkit-animation:fullexpand 25s ease-out infinite;
+    -moz-animation:fullexpand 25s ease-out infinite;
+    -o-animation:fullexpand 25s ease-out infinite;
+    -ms-animation:fullexpand 25s ease-out infinite;
+    animation:fullexpand 25s ease-out infinite;
+    z-index: 2;
+}
+
+
+.box{
+    position: absolute;
+
+}
+
+
+
+#box0{
+    z-index: 1;
+}
+
+#box0 img {
+
+    -webkit-animation:cycle 25s cubic-bezier(0.680, -0.550, 0.265, 1.550)infinite;
+    -moz-animation:cycle 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -o-animation:cycle 25s linear infinite;
+    -ms-animation:cycle 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation:cycle 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+}
+#box1 img {
+    -webkit-animation:cycletwo 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -moz-animation:cycletwo 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -o-animation:cycletwo 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -ms-animation:cycletwo 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation:cycletwo 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+}
+#box2 img{
+    -webkit-animation:cyclethree 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -moz-animation:cyclethree 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -o-animation:cyclethree 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -ms-animation:cyclethree 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation:cyclethree 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+
+}
+#box3 img{
+    -webkit-animation:cyclefour 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -moz-animation:cyclefour 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -o-animation:cyclefour 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -ms-animation:cyclefour 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation:cyclefour 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+
+}
+#box4 img{
+    -webkit-animation:cyclefive 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -moz-animation:cyclefive 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -o-animation:cyclefive 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    -ms-animation:cyclefive 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+    animation:cyclefive 25s cubic-bezier(0.680, -0.550, 0.265, 1.550) infinite;
+}
+
+
+
+/* ==========================================================================
+   TAB NAV
+   ========================================================================== */
+#tab-container #box-mask .tab-nav-item {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #e2e2e2;
+    color: black;
+}
+
+#tab-container #box-mask .tab-nav-item a {
+    float: left;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#tab-container #box-mask .tab-nav-1 {
+    left: 0;
+    background-image: url("../img/tab-nav-separator.jpg");
+    background-position: right 50%;
+    background-repeat: no-repeat;
+}
+
+#tab-container #box-mask .tab-nav-2 {
+    left: 25%;
+    background-image: url("../img/tab-nav-separator.jpg");
+    background-position: right 50%;
+    background-repeat: no-repeat;
+}
+
+#tab-container #box-mask .tab-nav-3 {
+    left: 50%;
+    background-image: url("../img/tab-nav-separator.jpg");
+    background-position: right 50%;
+    background-repeat: no-repeat;
+}
+
+#tab-container #box-mask .tab-nav-4 {
+    left: 75%;
+}
+
+#tab-container #box1:target .tab-nav-1 {
+    background-color: black;
+
+}
+
+#tab-container #box2:target .tab-nav-2 {
+    background-color: black;
+
+}
+
+#tab-container #box3:target .tab-nav-3 {
+    background-color: black;
+
+}
+
+#tab-container #box4:target .tab-nav-4 {
+    background-color: black;
+
+}
+
+.arrow-up {
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #000;
+    left: 49%;
+    top: -8px;
+}
+
+#tab-container #box1:target .tab-nav-1 .arrow-up {
+    display: block
+}
+
+#tab-container #box2:target .tab-nav-2 .arrow-up {
+    display: block
+}
+
+#tab-container #box3:target .tab-nav-3 .arrow-up {
+    display: block
+}
+
+#tab-container #box4:target .tab-nav-4 .arrow-up {
+    display: block
+}
